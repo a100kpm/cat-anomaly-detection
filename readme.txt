@@ -21,7 +21,7 @@ Training was >400 epochs
 
 Variational autoencoder did exeptionaly well for anomaly detection (8 anomalies found, see vae_anomalies.png),
 and terrible for image reconstruction (see vae_reconstruct_normal.png and vae_reconstruct_anomalies.png). The main reason is the very short training because the initial goal was already accomplished.
-Training was 40 epochs (with bat choice of beta_vae and questionable jump of learning rate if you look at the file).
+Training was 40 epochs (with bad choice of beta_vae and questionable jump of learning rate if you look at the file).
 If you want to train it to reconstruct images properly, remember to start the training with low value (or 0) for the parameter beta_vae, and to increase it slowly over time.
 
 
