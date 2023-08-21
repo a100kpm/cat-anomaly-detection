@@ -196,7 +196,7 @@ for i in range(lenn):
     img_encoded=new_data[i][1]
     list_encoded.append(kde.score_samples(img_encoded)[0])
 print(min(list_encoded),max(list_encoded),sum(list_encoded)/lenn)
-print(list_encoded[7046],list_encoded[4034]) # two image identified from reconstruction of error
+# print(list_encoded[7046],list_encoded[4034]) # two image identified from reconstruction of error
 
         
         
