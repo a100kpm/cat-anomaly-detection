@@ -176,7 +176,7 @@ for i in range(lenn):
     img_encoded=new_data[i][1]
     list_encoded.append(kde.score_samples(img_encoded)[0])
 print(min(list_encoded),max(list_encoded),sum(list_encoded)/lenn,max(list_encoded)-min(list_encoded))
-print(list_encoded[7046],list_encoded[4034]) # two image identified from reconstruction of error of ae
+# print(list_encoded[7046],list_encoded[4034]) # two image identified from reconstruction of error of ae
         
         
 # list_bad_kernel=[]
@@ -205,7 +205,7 @@ for i in range(lenn):
     list_predict_mixture.append(gm.score_samples(new_data[i][1])[0])
 
 print(min(list_predict_mixture),max(list_predict_mixture),sum(list_predict_mixture)/lenn)
-print(list_predict_mixture[7046],list_predict_mixture[4034]) # two image identified from reconstruction of error of ae
+# print(list_predict_mixture[7046],list_predict_mixture[4034]) # two image identified from reconstruction of error of ae
 df[['mixture_class','confidence_predict_mixture_class','predict_mixture_class']]=pd.DataFrame(list(zip(list_predict_mixture_class,list_predict_mixture_class_confidence,list_predict_mixture)))        
 # list_predict_mixture_index=[]    
 # for i in range(lenn):
@@ -228,7 +228,7 @@ for i in range(lenn):
     img_encoded=new_data_mu[i][1]
     list_encoded.append(kde.score_samples(img_encoded)[0])
 print(min(list_encoded),max(list_encoded),sum(list_encoded)/lenn,max(list_encoded)-min(list_encoded))
-print(list_encoded[7046],list_encoded[4034]) # two image identified from reconstruction of error of ae   
+# print(list_encoded[7046],list_encoded[4034]) # two image identified from reconstruction of error of ae   
 # list_bad_kernel=[]
 # for i in range(lenn):
 #     if list_encoded[i]<=max(list_encoded[7046],list_encoded[4034]):
@@ -254,7 +254,7 @@ for i in range(lenn):
     list_predict_mixture.append(gm.score_samples(new_data[i][1])[0])
 
 print(min(list_predict_mixture),max(list_predict_mixture),sum(list_predict_mixture)/lenn)
-print(list_predict_mixture[7046],list_predict_mixture[4034]) # two image identified from reconstruction of error of ae
+# print(list_predict_mixture[7046],list_predict_mixture[4034]) # two image identified from reconstruction of error of ae
 df[['mixture_class_mu','confidence_predict_mixture_class_mu','predict_mixture_class_mu']]=pd.DataFrame(list(zip(list_predict_mixture_class,list_predict_mixture_class_confidence,list_predict_mixture)))        
 # list_predict_mixture_index=[]    
 # for i in range(lenn):
@@ -277,7 +277,7 @@ for i in range(lenn):
     img_encoded=new_data_sigma[i][1]
     list_encoded.append(kde.score_samples(img_encoded)[0])
 print(min(list_encoded),max(list_encoded),sum(list_encoded)/lenn,max(list_encoded)-min(list_encoded))
-print(list_encoded[7046],list_encoded[4034]) # two image identified from reconstruction of error of ae       
+# print(list_encoded[7046],list_encoded[4034]) # two image identified from reconstruction of error of ae       
         
 # list_bad_kernel=[]
 # for i in range(lenn):
@@ -305,7 +305,7 @@ for i in range(lenn):
     list_predict_mixture.append(gm.score_samples(new_data[i][1])[0])
 
 print(min(list_predict_mixture),max(list_predict_mixture),sum(list_predict_mixture)/lenn)
-print(list_predict_mixture[7046],list_predict_mixture[4034]) # two image identified from reconstruction of error of ae
+# print(list_predict_mixture[7046],list_predict_mixture[4034]) # two image identified from reconstruction of error of ae
 df[['mixture_class_sigma','confidence_predict_mixture_class_sigma','predict_mixture_class_sigma']]=pd.DataFrame(list(zip(list_predict_mixture_class,list_predict_mixture_class_confidence,list_predict_mixture)))        
 # list_predict_mixture_index=[]    
 # for i in range(lenn):
